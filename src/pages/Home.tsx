@@ -9,8 +9,18 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Text = styled.p`
-  font-size: 1.2em;
+const TextWrapper = styled.div`
+  margin: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    font-size: 1rem;
+  }
 `;
 
 const Img = styled.img`
@@ -25,9 +35,11 @@ const Home = () => {
     <Wrapper>
       <Hero />
       <Img src="josh_and_claudia_header_pic.jpeg"></Img>
-      <Text>OCTOBER 09 2021</Text>
-      <Text>50 ADAMS STREET</Text>
-      <Text>GARDNER, MASSACHUSETTS</Text>
+      <TextWrapper>
+        <p>OCTOBER 09 2021</p>
+        <p>50 ADAMS STREET</p>
+        <p>GARDNER, MASSACHUSETTS</p>
+      </TextWrapper>
     </Wrapper>
   );
 };

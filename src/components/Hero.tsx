@@ -7,6 +7,11 @@ const StyledHero = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    margin: 1rem;
+  }
 `;
 
 const Header = styled.div`
@@ -16,6 +21,12 @@ const Header = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    font-size: 3rem;
+    text-align: center;
+  }
 `;
 
 const Text = styled.p`
@@ -29,6 +40,19 @@ const MenuBar = styled.div`
   align-items: center;
   width: 30%;
   margin: 1rem;
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    flex-direction: column;
+    margin: 0.2rem;
+  }
+`;
+
+const LinkWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
 `;
 
 type Props = {
@@ -47,9 +71,15 @@ const Hero = ({ goBack }: Props) => {
       )}
       <Header>Josh & Claudia</Header>
       <MenuBar>
-        <Link to="/q-and-a">Q & A</Link>
-        <Link to="/rsvp">RSVP</Link>
-        <a href="https://google.com">Registry</a>
+        <LinkWrapper>
+          <Link to="/q-and-a">Q & A</Link>
+        </LinkWrapper>
+        <LinkWrapper>
+          <Link to="/rsvp">RSVP</Link>
+        </LinkWrapper>
+        <LinkWrapper>
+          <a href="https://google.com">Registry</a>
+        </LinkWrapper>
       </MenuBar>
     </StyledHero>
   );

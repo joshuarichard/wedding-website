@@ -13,15 +13,15 @@ const questions: {
   },
   {
     q: "Will there be alchohol?",
-    a: "Yes, next question",
+    a: "Yes, next question.",
   },
   {
     q: "Will there be dinner and dancing?",
     a: "Obviously",
   },
   {
-    q: "serioulsy?",
-    a: "just kidding yes",
+    q: "Are kids allowed?",
+    a: "Are kids people too? Yes kids are allowed.",
   },
 ];
 
@@ -45,6 +45,7 @@ const Question = styled.div`
   font-weight: 300;
   padding: 0.7rem 1rem;
   color: #718f94;
+  text-align: center;
 `;
 
 const Answer = styled.p`

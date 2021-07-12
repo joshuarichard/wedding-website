@@ -14,8 +14,9 @@ const QAndA = () => {
     <Wrapper>
       <Hero goBack={true} />
       <iframe
+        title="RSVP Form"
         src="https://docs.google.com/forms/d/e/1FAIpQLScsJTHMxwxB1wWKj9UDY1tNmMxQ-gaUxNFZP6MZgJQ2PyiHtQ/viewform?embedded=true"
-        width="700"
+        width="80%"
         height="1200"
         frameBorder={0}
         marginHeight={0}
