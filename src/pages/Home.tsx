@@ -1,12 +1,15 @@
-import styled from "styled-components";
-
-import { Hero } from "../components";
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin 0 6rem;
+
+  @media only screen and (max-width: 768px) {
+    margin 0 0.25rem;
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -18,27 +21,32 @@ const TextWrapper = styled.div`
   align-items: center;
 
   @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
     font-size: 1rem;
   }
 `;
 
 const Img = styled.img`
-  width: 70%;
-  height: auto;
   border-radius: 10px;
-  margin: 1rem;
+  height: auto;
+  width: 100%;
+
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+  }
+`;
+
+const Text = styled.p`
+  font-size: 1.2rem;
 `;
 
 const Home = () => {
   return (
     <Wrapper>
-      <Hero />
-      <Img src="josh_and_claudia_header_pic.jpeg"></Img>
+      <Img src="josh_and_claudia_header_pic.jpeg" />
       <TextWrapper>
-        <p>OCTOBER 09 2021</p>
-        <p>50 ADAMS STREET</p>
-        <p>GARDNER, MASSACHUSETTS</p>
+        <Text>3PM OCTOBER 09 2021</Text>
+        <Text>50 ADAMS STREET</Text>
+        <Text>GARDNER, MASSACHUSETTS</Text>
       </TextWrapper>
     </Wrapper>
   );

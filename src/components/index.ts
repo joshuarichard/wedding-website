@@ -1,3 +1,4 @@
-import Hero from "./Hero";
+import Head from './Head';
+import Hero from './Hero';
 
-export { Hero };
+export { Head, Hero };

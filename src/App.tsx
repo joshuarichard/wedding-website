@@ -1,18 +1,18 @@
-import { Helmet } from "react-helmet";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import styled from "styled-components";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import styled from 'styled-components';
 
-import { Home, QAndA, RSVP } from "./pages";
+import { Head, Hero } from './components';
+import { Home, Pics, QAndA, Registry, RSVP } from './pages';
+import { Pages } from './types';
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 4rem;
+  min-height: calc(100vh);
+  min-width: 100%;
 
   @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
     margin: 0;
   }
 `;
@@ -20,54 +20,15 @@ const Wrapper = styled.div`
 const App = () => {
   return (
     <BrowserRouter>
-      <Helmet>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
-      </Helmet>
+      <Head />
+      <Hero />
       <Wrapper>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/q-and-a" component={QAndA} />
-          <Route exact path="/rsvp" component={RSVP} />
+          <Route exact path={Pages.HOME} component={Home} />
+          <Route exact path={Pages.Q_AND_A} component={QAndA} />
+          <Route exact path={Pages.RSVP} component={RSVP} />
+          <Route exact path={Pages.REGISTRY} component={Registry} />
+          <Route exact path={Pages.PICS} component={Pics} />
         </Switch>
       </Wrapper>
     </BrowserRouter>

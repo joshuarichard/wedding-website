@@ -1,10 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { createGlobalStyle } from "styled-components";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { createGlobalStyle } from 'styled-components';
 
-import App from "./App";
+import App from './App';
 
-import { colors } from "./styles";
+import { colors } from './styles';
 
 const GlobalStyle = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -62,6 +62,7 @@ const GlobalStyle = createGlobalStyle`
   }
   p {
     line-height: 1.6;
+    font-family: 'Roboto Slab', serif;
   }
   a {
     text-decoration: none;
@@ -87,5 +88,5 @@ ReactDOM.render(
     <GlobalStyle />
     <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );

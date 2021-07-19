@@ -1,6 +1,6 @@
 export const hex = {
-  parsley: "#183C34",
-  white: "#FFFFFF",
+  parsley: '#183C34',
+  white: '#FFFFFF',
 };
 
 export const colors = {

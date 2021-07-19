@@ -1,5 +1,7 @@
-import Home from "./Home";
-import QAndA from "./QAndA";
-import RSVP from "./RSVP";
+import Home from './Home';
+import Pics from './Pics';
+import QAndA from './QAndA';
+import RSVP from './RSVP';
+import Registry from './Registry';
 
-export { Home, QAndA, RSVP };
+export { Home, Pics, QAndA, Registry, RSVP };
