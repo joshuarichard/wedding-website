@@ -58,7 +58,7 @@ const GlobalStyle = createGlobalStyle`
   }
   div {
     font-family: Merriweather, serif;
-    color: ${colors.text};
+    color: ${colors.text.regular};
   }
   p {
     line-height: 1.6;

@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin 0 6rem;
+  margin 0 6rem 4rem 6rem;
 
   @media only screen and (max-width: 768px) {
     margin 0 0.25rem;
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `;
 
 const TextWrapper = styled.div`
-  margin: 1rem;
+  margin: 2rem;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;

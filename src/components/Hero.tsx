@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { Pages } from '../types';
+import { colors } from '../styles';
 
 const StyledHero = styled.div`
   margin: 3rem 3rem 1rem 3rem;
@@ -60,7 +61,7 @@ const LinkWrapper = styled.div<{ clicked: boolean }>`
   justify-content: center;
   align-items: center;
   padding: 0.4rem 0.6rem;
-  border-bottom: ${({ clicked }) => (clicked ? 'solid thin white' : 'none')};
+  border-bottom: ${({ clicked }) => (clicked ? `solid thin ${colors.text.regular}` : 'none')};
 
   @media only screen and (max-width: 768px) {
     padding: 1rem;
