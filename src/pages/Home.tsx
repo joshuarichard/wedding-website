@@ -44,7 +44,7 @@ const Home = () => {
     <Wrapper>
       <Img src="josh_and_claudia_header_pic.jpeg" />
       <TextWrapper>
-        <Text>3PM OCTOBER 09 2021</Text>
+        <Text>3PM · OCTOBER 09 2021</Text>
         <Text>50 ADAMS STREET</Text>
         <Text>GARDNER, MASSACHUSETTS</Text>
       </TextWrapper>

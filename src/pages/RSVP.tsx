@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   iframe {
     height: calc(100vh);
     width: calc(100vw);
-    margin: 4rem;
+    margin: 2rem;
     box-sizing: border-box;
     background-color: ${colors.home};
   }

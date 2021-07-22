@@ -49,12 +49,12 @@ const Question = styled.div`
   font-weight: 300;
   padding: 0.7rem 1rem;
   color: ${colors.text.opaque};
-  text-align: center;
 `;
 
 const Answer = styled.p`
   font-size: 1em;
-  padding: 1rem 6rem;
+  padding: 1rem 0;
+  width: 100%;
 `;
 
 const QAndA = () => {
