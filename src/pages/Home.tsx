@@ -42,7 +42,7 @@ const Text = styled.p`
 const Home = () => {
   return (
     <Wrapper>
-      <Img src="header.gif" />
+      <Img src="header_compressed.gif" />
       <TextWrapper>
         <Text>3PM · OCTOBER 09 2021</Text>
         <Text>50 ADAMS STREET</Text>

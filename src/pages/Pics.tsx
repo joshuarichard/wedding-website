@@ -79,7 +79,7 @@ const pics: {
     desc: 'Josh and Claudia go to Hawaii pt. 2',
   },
   {
-    src: '/pictures/red_sox.jpeg',
+    src: '/pictures/red_sox.webp',
     desc: 'Josh and Claudia go to the Red Sox',
   },
   {
@@ -91,7 +91,7 @@ const pics: {
     desc: 'Josh and Claudia go to the UK',
   },
   {
-    src: '/pictures/wedding_2.jpeg',
+    src: '/pictures/wedding_2.webp',
     desc: 'Josh and Claudia go to a wedding ',
   },
   {
@@ -115,7 +115,7 @@ const pics: {
     desc: "Edgar sleepin' in a blanket",
   },
   {
-    src: '/pictures/yard_sale.jpeg',
+    src: '/pictures/yard_sale.webp',
     desc: 'Josh and Claudia go to a yardsale and make a purchase',
   },
   {
@@ -148,7 +148,7 @@ const pics: {
   },
   {
     src: '/pictures/house.webp',
-    desc: "Josh and Claudia's house'",
+    desc: "Josh and Claudia's house",
   },
 ];
 

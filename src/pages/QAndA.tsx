@@ -66,6 +66,10 @@ const Answer = styled.p`
 
 const ImgWrapper = styled.div`
   display: flex;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Img = styled.img`
