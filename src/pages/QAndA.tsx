@@ -95,7 +95,7 @@ const QAndA = () => {
         ))}
         <Question>{"Built in 1905, where was the first 'Biggest Chair in the World'?"}</Question>
         <ImgWrapper>
-          <Img src="/pictures/worlds_biggest_chair.png" />
+          <Img src="/pictures/worlds_biggest_chair.webp" />
           <Img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Biggest_Chair%2C_Gardner%2C_MA.jpg" />
         </ImgWrapper>
       </QAListWrapper>
