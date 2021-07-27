@@ -28,7 +28,7 @@ const TextWrapper = styled.div`
 const Img = styled.img`
   border-radius: 10px;
   height: auto;
-  width: 100%;
+  width: auto;
 
   @media only screen and (max-width: 768px) {
     width: 90%;
@@ -42,7 +42,7 @@ const Text = styled.p`
 const Home = () => {
   return (
     <Wrapper>
-      <Img src="josh_and_claudia_header_pic.jpeg" />
+      <Img src="header.gif" />
       <TextWrapper>
         <Text>3PM · OCTOBER 09 2021</Text>
         <Text>50 ADAMS STREET</Text>

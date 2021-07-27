@@ -107,27 +107,27 @@ const Hero = ({ goBack }: Props) => {
       <MenuBar>
         <LinkWrapper clicked={clicked === Pages.HOME}>
           <Link to={Pages.HOME} onClick={() => handleClick(Pages.HOME)}>
-            Home
+            home
           </Link>
         </LinkWrapper>
         <LinkWrapper clicked={clicked === Pages.Q_AND_A}>
           <Link to={Pages.Q_AND_A} onClick={() => handleClick(Pages.Q_AND_A)}>
-            Q & A
+            q & a
           </Link>
         </LinkWrapper>
         <LinkWrapper clicked={clicked === Pages.RSVP}>
           <Link to={Pages.RSVP} onClick={() => handleClick(Pages.RSVP)}>
-            RSVP
+            rsvp
           </Link>
         </LinkWrapper>
         <LinkWrapper clicked={clicked === Pages.REGISTRY}>
           <Link to={Pages.REGISTRY} onClick={() => handleClick(Pages.REGISTRY)}>
-            Registry
+            registry
           </Link>
         </LinkWrapper>
         <LinkWrapper clicked={clicked === Pages.PICS}>
           <Link to={Pages.PICS} onClick={() => handleClick(Pages.PICS)}>
-            Pics of our Happy Family
+            pics of our happy family
           </Link>
         </LinkWrapper>
       </MenuBar>

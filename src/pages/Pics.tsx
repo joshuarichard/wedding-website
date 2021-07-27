@@ -64,7 +64,7 @@ const pics: {
   },
   {
     src: '/pictures/broken_leg.webp',
-    desc: 'Josh breaks his leg and Claudia comforts with a funny joke',
+    desc: 'Josh breaks his leg and Claudia comforts him with a funny joke',
   },
   {
     src: '/pictures/early_picture.webp',

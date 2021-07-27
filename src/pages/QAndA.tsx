@@ -20,8 +20,12 @@ const questions: {
     a: 'We are aiming for a little before midnight.',
   },
   {
-    q: 'Are kids allowed?',
-    a: 'Absolutely, but it will not be an event tailored to children. Childcare will not be provided, and children should be supervised.',
+    q: "Which city is also known as 'Chair City'",
+    a: 'Gardner, Massachusetts',
+  },
+  {
+    q: "In 1940, Gardner, Massachusetts' slogan was what?",
+    a: '"The World Rests on Gardner, Mass., Chairs"',
   },
 ];
 
@@ -32,7 +36,7 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const QuestionWrapper = styled.div`
+const QAListWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,19 +59,42 @@ const Answer = styled.p`
   font-size: 1em;
   padding: 1rem 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ImgWrapper = styled.div`
+  display: flex;
+`;
+
+const Img = styled.img`
+  border-radius: 10px;
+  height: auto;
+  width: 100%;
+  margin: 1rem;
+
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 const QAndA = () => {
   return (
     <Wrapper>
-      <QuestionWrapper>
+      <QAListWrapper>
         {questions.map((e, i) => (
           <Fragment key={i}>
             <Question>{e.q}</Question>
             <Answer>{e.a}</Answer>
           </Fragment>
         ))}
-      </QuestionWrapper>
+        <Question>{"Built in 1905, where was the first 'Biggest Chair in the World'?"}</Question>
+        <ImgWrapper>
+          <Img src="/pictures/worlds_biggest_chair.png" />
+          <Img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Biggest_Chair%2C_Gardner%2C_MA.jpg" />
+        </ImgWrapper>
+      </QAListWrapper>
     </Wrapper>
   );
 };
